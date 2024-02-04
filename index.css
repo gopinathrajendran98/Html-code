@@ -32,13 +32,25 @@ nav ul li a{
     color: blanchedalmond;
     text-decoration: none;
 }
-
-.slider nav img{
+.slider-nav{
+    padding: 50px;
+    position: relative;
+    max-width: 48rem;
+    margin: 0;
     display: flex;
-    aspect-ratio: 16 / 9;
-    width: 1250px;
-    height: 400px;
-
+    aspect-ratio: 16/9;
+    overflow: auto;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+    width: 600px;
+    
+}
+.slider-nav img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
 }
 .class1{
     background-color: white;
